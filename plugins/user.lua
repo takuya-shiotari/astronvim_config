@@ -1,4 +1,24 @@
 return {
+  {
+    "tpope/vim-rails",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      -- disable autocmd set filetype=eruby.yaml
+      vim.api.nvim_create_autocmd(
+        { 'BufNewFile', 'BufReadPost' },
+        {
+          pattern = { '*.yml' },
+          callback = function()
+            vim.bo.filetype = 'yaml'
+          end
+        }
+      )
+    end
+  },
+  {
+    "slim-template/vim-slim",
+    event = { "BufReadPre", "BufNewFile" },
+  }
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
