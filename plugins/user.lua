@@ -18,7 +18,14 @@ return {
   {
     "slim-template/vim-slim",
     event = { "BufReadPre", "BufNewFile" },
-  }
+  },
+  -- {
+  --   "esensar/nvim-dev-container",
+  --   event = { "VeryLazy" },
+  --   config = function()
+  --     require("devcontainer").setup{}
+  --   end
+  -- },
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
