@@ -10,6 +10,7 @@ return {
         -- "lua_ls",
       })
       require('lspconfig').solargraph.setup({cmd = { 'bundle', 'exec', 'solargraph', 'stdio' }})
+      -- require('lspconfig').ruby_ls.setup({cmd = { 'bundle', 'exec', 'ruby-lsp' }})
     end,
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources

@@ -19,6 +19,10 @@ return {
     "slim-template/vim-slim",
     event = { "BufReadPre", "BufNewFile" },
   },
+  {
+    "github/copilot.vim",
+    lazy=false,
+  },
   -- {
   --   "esensar/nvim-dev-container",
   --   event = { "VeryLazy" },
